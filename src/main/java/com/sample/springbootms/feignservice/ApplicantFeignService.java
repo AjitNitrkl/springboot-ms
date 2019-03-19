@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 //@FeignClient(name="applicant-service" )//Service Id of applicant service
 //,url="http://localhost:8081"
-@FeignClient(name="applicant-service")
+@FeignClient(name="applicant-service",url="applicant-service:8080")
 //url="http://applicant-service-myspringbootprj.1d35.starter-us-east-1.openshiftapps.com")
 public interface ApplicantFeignService {
 	
